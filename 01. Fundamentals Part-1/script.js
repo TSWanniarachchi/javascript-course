@@ -30,3 +30,30 @@ let job2 = "teacher";
 
 console.log(myFirstJob);
 */
+
+////////////////////////////////////
+// Data Types
+let firstName = "Sachin"; // String
+console.log(typeof firstName);
+
+let age = 27; // Number
+console.log(typeof age);
+
+let javascriptIsFun = true; // Boolean
+console.log(javascriptIsFun);
+
+console.log(typeof true);
+console.log(typeof javascriptIsFun);
+
+javascriptIsFun = "Yes!"; // Dyanamic Typing
+console.log(typeof javascriptIsFun);
+
+let year; // Undefined
+console.log(year);
+console.log(typeof year);
+
+year = 1996;
+console.log(year);
+console.log(typeof year);
+
+console.log(typeof null); // Both the value and type of the value are null
