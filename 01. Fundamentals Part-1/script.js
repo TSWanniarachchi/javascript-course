@@ -29,7 +29,6 @@ let job1 = "programmer";
 let job2 = "teacher";
 
 console.log(myFirstJob);
-*/
 
 ////////////////////////////////////
 // Data Types
@@ -57,3 +56,4 @@ console.log(year);
 console.log(typeof year);
 
 console.log(typeof null); // Both the value and type of the value are null
+*/
