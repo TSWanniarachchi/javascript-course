@@ -57,3 +57,17 @@ console.log(typeof year);
 
 console.log(typeof null); // Both the value and type of the value are null
 */
+////////////////////////////////////
+// let, const and var
+let age = 30;
+age = 31;
+
+const birthYear = 1996;
+// birthYear = 1991;
+// const job;
+
+var job = "Programmer";
+job = "Student";
+
+lastName = "Wanniarachchi"; // Never just write a variable like this without really declaring it.
+console.log(lastName);
