@@ -22,6 +22,7 @@ console.log(
     " million."
 );
 
+
 ////////////////////////////////////
 // Data Types
 
@@ -34,6 +35,7 @@ console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+
 
 ////////////////////////////////////
 // let, const and var
@@ -48,6 +50,7 @@ language = "Sinhala";
 
 // 3.
 // isIsland = false;
+
 
 ////////////////////////////////////
 // Basic Operators
@@ -75,6 +78,7 @@ const description =
   " million people speak " +
   language;
 console.log(description);
+
 
 ////////////////////////////////////
 */

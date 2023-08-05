@@ -4,6 +4,7 @@
 let js = "amazing";
 console.log(40 + 5 + 9 - (78 * 8) / 1);
 
+
 ////////////////////////////////////
 // Values and Variables
 console.log("Sachin");
@@ -29,6 +30,7 @@ let job1 = "programmer";
 let job2 = "teacher";
 
 console.log(myFirstJob);
+
 
 ////////////////////////////////////
 // Data Types
@@ -57,6 +59,7 @@ console.log(typeof year);
 
 console.log(typeof null); // Both the value and type of the value are null
 
+
 ////////////////////////////////////
 // let, const and var
 let age = 30;
@@ -71,7 +74,8 @@ job = "Student";
 
 lastName = "Wanniarachchi"; // Never just write a variable like this without really declaring it.
 console.log(lastName);
-*/
+
+
 ////////////////////////////////////
 // Basic Operators
 
@@ -107,3 +111,19 @@ const isFullAge = ageKavindu >= 18;
 console.log(isFullAge);
 
 console.log(now - 1990 > now - 2005);
+*/
+
+////////////////////////////////////
+// Operator Precedence
+const now = 2023;
+const ageSachin = now - 1990;
+const ageKavindu = now - 2005;
+
+console.log(now - 1990 > now - 2005);
+
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10, x = 10
+console.log(x, y);
+
+const averageAge = (ageSachin + ageKavindu) / 2;
+console.log(ageSachin, ageKavindu, averageAge);
