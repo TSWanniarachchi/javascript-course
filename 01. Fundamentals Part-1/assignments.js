@@ -1,4 +1,4 @@
-/**/
+/*
 ////////////////////////////////////
 // Values and Variables
 
@@ -34,3 +34,17 @@ console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+*/
+////////////////////////////////////
+// let, const and var
+
+// 1.
+language = "Sinhala";
+
+// 2.
+const country = "Sri-Lanka";
+const continent = "Asia";
+const isIsland = true;
+
+// 3.
+// isIsland = false;
