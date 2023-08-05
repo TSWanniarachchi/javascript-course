@@ -34,7 +34,7 @@ console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
-*/
+
 ////////////////////////////////////
 // let, const and var
 
@@ -42,9 +42,39 @@ console.log(typeof language);
 language = "Sinhala";
 
 // 2.
-const country = "Sri-Lanka";
-const continent = "Asia";
-const isIsland = true;
+// const country = "Sri-Lanka";
+// const continent = "Asia";
+// const isIsland = true;
 
 // 3.
 // isIsland = false;
+
+////////////////////////////////////
+// Basic Operators
+
+// 1.
+console.log(population / 2);
+
+// 2.
+population++;
+console.log(population);
+
+// 3.
+console.log(population > 6);
+
+// 4.
+console.log(population < 33);
+
+// 5.
+const description =
+  country +
+  " is in " +
+  continent +
+  ", and it's " +
+  population +
+  " million people speak " +
+  language;
+console.log(description);
+
+////////////////////////////////////
+*/
