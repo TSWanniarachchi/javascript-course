@@ -1,4 +1,4 @@
-/*
+/**/
 ////////////////////////////////////
 // Values and Variables
 
@@ -22,7 +22,6 @@ console.log(
     " million."
 );
 
-
 ////////////////////////////////////
 // Data Types
 
@@ -35,7 +34,6 @@ console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
-
 
 ////////////////////////////////////
 // let, const and var
@@ -50,7 +48,6 @@ language = "Sinhala";
 
 // 3.
 // isIsland = false;
-
 
 ////////////////////////////////////
 // Basic Operators
@@ -79,6 +76,9 @@ const description =
   language;
 console.log(description);
 
-
 ////////////////////////////////////
-*/
+// Strings and Template Literals
+
+// 1.
+const descriptionNew = `${country} is in ${continent}, and it's ${population} million people speak ${language}.`;
+console.log(descriptionNew);

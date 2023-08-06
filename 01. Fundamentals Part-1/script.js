@@ -146,6 +146,7 @@ TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 
 GOOD LUCK 😀
 */
 
+/*
 // 1.
 const massMark = 78;
 const heightMark = 1.69;
@@ -162,3 +163,37 @@ console.log(BMIMark, BMIJohn);
 // 4.
 const markHigherBMI = BMIMark > BMIJohn;
 console.log(markHigherBMI);
+*/
+
+////////////////////////////////////
+// Strings and Template Literals
+const firstName = "Sachin";
+const job = "Programmer";
+const birthYear = 1996;
+const year = 2023;
+
+const sachin =
+  "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "."; // concat strings
+console.log(sachin);
+
+// `` backticks
+
+const sachinNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}.`; // template strings
+console.log(sachinNew);
+
+console.log(`just a regular string...`);
+
+// new line
+console.log(
+  "String with \n\
+multiple \n\
+lines"
+);
+
+console.log(`String with
+multiple
+lines`);
+
+console.log(`String with \nmultiple \nlines`);
+
+////////////////////////////////////
