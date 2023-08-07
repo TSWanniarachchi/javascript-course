@@ -1,5 +1,5 @@
 # JavaScript-Course
 
- The files of the javascript course are contained here.
+ The files of the JavaScript course are contained here.
 
- Note : https://1drv.ms/o/s!Akt357BkRuzmdx0AuXtiwQFE24c?e=ycgELA
+ Note Book : https://1drv.ms/o/s!Akt357BkRuzmgXG9EL7kjzN0VZSg?e=sx36eu
