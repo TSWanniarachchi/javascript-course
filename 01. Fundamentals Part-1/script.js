@@ -163,7 +163,7 @@ console.log(BMIMark, BMIJohn);
 // 4.
 const markHigherBMI = BMIMark > BMIJohn;
 console.log(markHigherBMI);
-*/
+
 
 ////////////////////////////////////
 // Strings and Template Literals
@@ -195,5 +195,27 @@ multiple
 lines`);
 
 console.log(`String with \nmultiple \nlines`);
+*/
 
 ////////////////////////////////////
+// Taking Decisions: if / else Statements (control structure.)
+const age = 15;
+// const isOldEnough = age >= 18;
+
+if (age >= 18) {
+  console.log("Sachin can start driving license 🚗");
+} else {
+  const yearLeft = 18 - age;
+  console.log(`Sachin is too young. Wait another ${yearLeft} years. 😒`);
+}
+
+const birthYear = 1996;
+let century;
+
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+
+console.log(century);
