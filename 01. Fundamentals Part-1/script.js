@@ -258,7 +258,7 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
 }
-*/
+
 
 ////////////////////////////////////
 // Type Conversion and Coercion
@@ -275,6 +275,7 @@ console.log(String(24), 42);
 
 // Type Coercion
 console.log("i am " + 27 + " years old");
+console.log(`i am ${27} years old`);
 console.log("23" - "10" - 3);
 console.log("23" / "2");
 
@@ -284,5 +285,36 @@ console.log(n);
 
 console.log(2 + 3 + 4 + "5"); // 95
 console.log("10" - "4" - "3" - 2 + "5"); // 15
+*/
+
+////////////////////////////////////
+// Truthy and Falsy Values
+
+// 5 falsy values: 0, "", undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+
+// 5 Truthy values: 1, Non-empty strings, empty object {} and array [], Numbers other than zero
+console.log(Boolean(1));
+console.log(Boolean("Sachin"));
+console.log(Boolean({}));
+console.log(Boolean([]));
+
+const money = 0;
+if (money) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log("You should get a job!");
+}
+
+let height = 0;
+if (height) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}
 
 ////////////////////////////////////
