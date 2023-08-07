@@ -82,7 +82,6 @@ console.log(description);
 // 1.
 const descriptionNew = `${country} is in ${continent}, and it's ${population} million people speak ${language}.`;
 console.log(descriptionNew);
-*/
 
 ////////////////////////////////////
 // Taking Decisions: if / else Statements
@@ -98,3 +97,14 @@ if (population > 33) {
     `${country}'s population is ${33 - population} million below average.`
   );
 }
+*/
+
+////////////////////////////////////
+// Type Conversion and Coercion
+
+// 1., 2.
+console.log("9" - "5"); // 4
+console.log("19" - "13" + "17"); // "617"
+console.log("19" - "13" + 17); // 23
+console.log("123" < 57); // false
+console.log(5 + 6 + "4" + 9 - 4 - 2); // 1143

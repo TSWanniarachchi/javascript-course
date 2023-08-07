@@ -259,3 +259,30 @@ if (BMIMark > BMIJohn) {
   console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
 }
 */
+
+////////////////////////////////////
+// Type Conversion and Coercion
+
+// Type Conversion
+const inputYear = "1991";
+
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Sachin")); // ❌ NaN = Not a Number (bug) ✔ Invalid Number
+console.log(typeof NaN); // number
+console.log(String(24), 42);
+
+// Type Coercion
+console.log("i am " + 27 + " years old");
+console.log("23" - "10" - 3);
+console.log("23" / "2");
+
+let n = "1" + 1; // 11
+n = n - 1; // 10
+console.log(n);
+
+console.log(2 + 3 + 4 + "5"); // 95
+console.log("10" - "4" - "3" - 2 + "5"); // 15
+
+////////////////////////////////////
