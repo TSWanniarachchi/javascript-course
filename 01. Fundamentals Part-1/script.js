@@ -285,7 +285,7 @@ console.log(n);
 
 console.log(2 + 3 + 4 + "5"); // 95
 console.log("10" - "4" - "3" - 2 + "5"); // 15
-*/
+
 
 ////////////////////////////////////
 // Truthy and Falsy Values
@@ -316,5 +316,32 @@ if (height) {
 } else {
   console.log("Height is UNDEFINED");
 }
+*/
+
+////////////////////////////////////
+// Equality Operators: == vs. ===
+const age = "18";
+
+// strict equality operator ===
+if (age === 18) console.log("You just became an adult :D (strict)"); // triple equal does not perform type coercion
+
+// loose equality operator ==
+if (age == 18) console.log("You just became an adult :D (loose)"); // double equal does type coercion
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  console.log("Cool! 23 is an amazing number!");
+} else if (favourite === 7) {
+  console.log("7 is also a cool number");
+} else if (favourite === 9) {
+  console.log("9 is also a cool number");
+} else {
+  console.log("Number is not 7 or 9 or 23");
+}
+
+if (favourite !== 23) console.log("Why not 23?");
 
 ////////////////////////////////////
