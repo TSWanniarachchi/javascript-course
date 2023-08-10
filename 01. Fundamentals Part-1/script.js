@@ -384,6 +384,7 @@ There are two gymnastics teams: Dolphins and Koalas. They compete against each o
 TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
 */
 
+/*
 // 1.
 const scoreDolphins = (96 + 108 + 89) / 3;
 const scoreKoalas = (88 + 91 + 110) / 3;
@@ -396,5 +397,6 @@ if (scoreDolphins > scoreKoalas) {
 } else if (scoreDolphins === scoreKoalas) {
   console.log("Both win the trophy");
 }
+*/
 
 ////////////////////////////////////
