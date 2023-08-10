@@ -1,4 +1,3 @@
-/*
 ////////////////////////////////////
 // Values and Variables
 
@@ -7,6 +6,7 @@ let country = "Sri-Lanka";
 let continent = "Asia";
 let population = 22.16;
 
+/*
 // 2.
 console.log(country);
 console.log(continent);
@@ -21,6 +21,7 @@ console.log(
     population +
     " million."
 );
+*/
 
 ////////////////////////////////////
 // Data Types
@@ -29,11 +30,13 @@ console.log(
 let isIsland = true;
 let language;
 
+/*
 // 2.
 console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+*/
 
 ////////////////////////////////////
 // let, const and var
@@ -41,6 +44,7 @@ console.log(typeof language);
 // 1.
 language = "Sinhala";
 
+/*
 // 2.
 // const country = "Sri-Lanka";
 // const continent = "Asia";
@@ -48,10 +52,12 @@ language = "Sinhala";
 
 // 3.
 // isIsland = false;
+*/
 
 ////////////////////////////////////
 // Basic Operators
 
+/*
 // 1.
 console.log(population / 2);
 
@@ -75,17 +81,21 @@ const description =
   " million people speak " +
   language;
 console.log(description);
+*/
 
 ////////////////////////////////////
 // Strings and Template Literals
 
+/*
 // 1.
 const descriptionNew = `${country} is in ${continent}, and it's ${population} million people speak ${language}.`;
 console.log(descriptionNew);
+*/
 
 ////////////////////////////////////
 // Taking Decisions: if / else Statements
 
+/*
 // 2.
 // population = 130;
 
@@ -97,11 +107,12 @@ if (population > 33) {
     `${country}'s population is ${33 - population} million below average.`
   );
 }
-
+*/
 
 ////////////////////////////////////
 // Type Conversion and Coercion
 
+/*
 // 1., 2.
 console.log("9" - "5"); // 4
 console.log("19" - "13" + "17"); // "617"
@@ -113,6 +124,7 @@ console.log(5 + 6 + "4" + 9 - 4 - 2); // 1143
 ////////////////////////////////////
 // Equality Operators: == vs. ===
 
+/*
 // 1.
 const numNeighbours = Number(
   prompt("How many neighbour countries does your country have?")
@@ -126,5 +138,14 @@ if (numNeighbours === 1) {
 } else {
   console.log("No borders");
 }
+*/
 
 ////////////////////////////////////
+// Logical Operators
+
+// 1., 2., 3., 4., 5.
+if (language === "English" && population < 50 && !isIsland) {
+  console.log(`You should live in ${country} :)`);
+} else {
+  console.log(`${country} does not meet your criteria :(`);
+}
