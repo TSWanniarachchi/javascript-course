@@ -397,7 +397,7 @@ if (scoreDolphins > scoreKoalas) {
 } else if (scoreDolphins === scoreKoalas) {
   console.log("Both win the trophy");
 }
-*/
+
 
 ////////////////////////////////////
 // The switch Statement
@@ -440,5 +440,6 @@ if (day === "monday") {
 } else {
   console.log("Not a valid day!");
 }
+*/
 
 ////////////////////////////////////
