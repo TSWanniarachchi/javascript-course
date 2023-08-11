@@ -155,6 +155,7 @@ if (language === "English" && population < 50 && !isIsland) {
 ////////////////////////////////////
 // The switch Statement
 
+/*
 // 1.
 switch (language) {
   case "chinese":
@@ -176,3 +177,19 @@ switch (language) {
   default:
     console.log("Great language too :D");
 }
+*/
+
+////////////////////////////////////
+// The Conditional (Ternary) Operator
+
+/*
+// 2.
+population = 130;
+
+// 1.
+console.log(
+  `${country}'s population is ${population > 33 ? "above" : "below"} average.`
+);
+*/
+
+////////////////////////////////////
