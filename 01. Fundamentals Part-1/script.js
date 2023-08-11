@@ -443,3 +443,19 @@ if (day === "monday") {
 */
 
 ////////////////////////////////////
+// Statements and Expressions
+
+// Expressions : Produce a value
+3 + 4;
+1996;
+true && false && !false;
+
+// Statment : Like full code
+if (23 > 10) {
+  const str = "23 is bigger";
+}
+
+const me = "Sachin";
+console.log(`I'm ${2037 - 1991} years old ${me}`);
+
+////////////////////////////////////
