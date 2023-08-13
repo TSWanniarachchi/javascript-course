@@ -37,6 +37,22 @@ console.log(appleOrangeJuice);
 
 const num = Number("23");
 console.log(num);
-*/
+
 
 ///////////////////////////////////////
+// Function Declarations vs. Expressions
+
+// Function declaration
+function calcAge1(birthyear) {
+  return 2037 - birthyear;
+}
+const age1 = calcAge1(1996);
+console.log(age1);
+
+// Function expression
+const calcAge2 = function (birthyear) {
+  return 2037 - birthyear;
+};
+const age2 = calcAge2(1996);
+console.log(age2);
+*/

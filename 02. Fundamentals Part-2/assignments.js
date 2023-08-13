@@ -7,6 +7,7 @@ const language = "Sinhala";
 ////////////////////////////////////
 // Functions
 
+/*
 // 1.
 function describeCountry(country, population, capitalCity) {
   return `${country} has ${population} million people and its capital city is ${capitalCity}.`;
@@ -24,5 +25,29 @@ const country3 = describeCountry("United Kingdom", 67, "London");
 console.log(country1);
 console.log(country2);
 console.log(country3);
+*/
 
 ////////////////////////////////////
+// Function Declarations vs. Expressions
+
+/**/
+// 1., 2.
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+// 3.
+const percSrilanka1 = percentageOfWorld1(population);
+const percIndia1 = percentageOfWorld1(1408);
+const percUnitedKingdom1 = percentageOfWorld1(67);
+console.log(percSrilanka1, percIndia1, percUnitedKingdom1);
+
+// 4.
+const percentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+};
+
+const percSrilanka2 = percentageOfWorld2(population);
+const percIndia2 = percentageOfWorld2(1408);
+const percUnitedKingdom2 = percentageOfWorld2(67);
+console.log(percSrilanka2, percIndia2, percUnitedKingdom2);
