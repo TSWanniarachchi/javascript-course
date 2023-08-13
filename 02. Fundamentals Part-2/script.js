@@ -10,7 +10,7 @@ if (hasDriversLicense) console.log("I can drive a 🚗");
 
 // const interface = "Audio";
 // const private = 534;
-*/
+
 
 ///////////////////////////////////////
 // Functions
@@ -37,5 +37,6 @@ console.log(appleOrangeJuice);
 
 const num = Number("23");
 console.log(num);
+*/
 
 ///////////////////////////////////////
