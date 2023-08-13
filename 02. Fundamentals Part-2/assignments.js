@@ -30,7 +30,7 @@ console.log(country3);
 ////////////////////////////////////
 // Function Declarations vs. Expressions
 
-/**/
+/*
 // 1., 2.
 function percentageOfWorld1(population) {
   return (population / 7900) * 100;
@@ -51,3 +51,14 @@ const percSrilanka2 = percentageOfWorld2(population);
 const percIndia2 = percentageOfWorld2(1408);
 const percUnitedKingdom2 = percentageOfWorld2(67);
 console.log(percSrilanka2, percIndia2, percUnitedKingdom2);
+*/
+
+////////////////////////////////////
+// Arrow functions
+
+// 1.
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
+const percSrilanka3 = percentageOfWorld3(population);
+const percIndia3 = percentageOfWorld3(1408);
+const percUnitedKingdom3 = percentageOfWorld3(67);
+console.log(percSrilanka3, percIndia3, percUnitedKingdom3);
