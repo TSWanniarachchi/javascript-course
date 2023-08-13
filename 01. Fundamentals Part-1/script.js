@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 ////////////////////////////////////
 // Linking a JavaScript File
