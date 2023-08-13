@@ -1,3 +1,5 @@
+"use strict";
+
 const country = "Sri-Lanka";
 const continent = "Asia";
 const population = 22.16;
@@ -56,9 +58,31 @@ console.log(percSrilanka2, percIndia2, percUnitedKingdom2);
 ////////////////////////////////////
 // Arrow functions
 
+/*
 // 1.
 const percentageOfWorld3 = (population) => (population / 7900) * 100;
 const percSrilanka3 = percentageOfWorld3(population);
 const percIndia3 = percentageOfWorld3(1408);
 const percUnitedKingdom3 = percentageOfWorld3(67);
 console.log(percSrilanka3, percIndia3, percUnitedKingdom3);
+*/
+
+////////////////////////////////////
+// Functions Calling Other Functions
+
+// 1.
+function describePopulation(country, population) {
+  return `${country} has ${population} million people, which is about ${percentageOfWorld1(
+    population
+  )}% of the world.'`;
+}
+
+// 2.
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+// 3.
+console.log(describePopulation(country, population));
+console.log(describePopulation("India", 1408));
+console.log(describePopulation("United Kingdom", 67));

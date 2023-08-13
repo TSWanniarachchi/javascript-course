@@ -1,12 +1,14 @@
 /*
 ////////////////////////////////////
 // Linking a JavaScript File
+
 let js = "amazing";
 console.log(40 + 5 + 9 - (78 * 8) / 1);
 
 
 ////////////////////////////////////
 // Values and Variables
+
 console.log("Sachin");
 console.log(23);
 
@@ -34,6 +36,7 @@ console.log(myFirstJob);
 
 ////////////////////////////////////
 // Data Types
+
 let firstName = "Sachin"; // String
 console.log(typeof firstName);
 
@@ -62,6 +65,7 @@ console.log(typeof null); // Both the value and type of the value are null
 
 ////////////////////////////////////
 // let, const and var
+
 let age = 30;
 age = 31;
 
@@ -115,6 +119,7 @@ console.log(now - 1990 > now - 2005);
 
 ////////////////////////////////////
 // Operator Precedence
+
 const now = 2023;
 const ageSachin = now - 1990;
 const ageKavindu = now - 2005;
@@ -167,6 +172,7 @@ console.log(markHigherBMI);
 
 ////////////////////////////////////
 // Strings and Template Literals
+
 const firstName = "Sachin";
 const job = "Programmer";
 const birthYear = 1996;
@@ -199,6 +205,7 @@ console.log(`String with \nmultiple \nlines`);
 
 ////////////////////////////////////
 // Taking Decisions: if / else Statements
+
 const age = 15;
 // const isOldEnough = age >= 18;
 
@@ -320,6 +327,7 @@ if (height) {
 
 ////////////////////////////////////
 // Equality Operators: == vs. ===
+
 const age = "18";
 
 // strict equality operator ===
@@ -347,6 +355,7 @@ if (favourite !== 23) console.log("Why not 23?");
 
 ////////////////////////////////////
 // Logical Operators
+
 const hasDriversLicense = true; //A
 const hasGoodVision = true; // B
 
@@ -401,6 +410,7 @@ if (scoreDolphins > scoreKoalas) {
 
 ////////////////////////////////////
 // The switch Statement
+
 const day = "monday";
 
 switch (day) {

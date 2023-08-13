@@ -1,7 +1,9 @@
 "use strict";
+
 /*
 ////////////////////////////////////
 // Activating Strict Mode
+
 let hasDriversLicense = false;
 const passTest = true;
 
@@ -14,6 +16,7 @@ if (hasDriversLicense) console.log("I can drive a 🚗");
 
 ///////////////////////////////////////
 // Functions
+
 function logger() {
   console.log("My name is Sachin");
 }
@@ -59,6 +62,7 @@ console.log(age2);
 
 ///////////////////////////////////////
 // Arrow functions
+
 const calAge3 = (birthyear) => 2037 - birthyear;
 const age3 = calAge3(1996);
 console.log(age3);
@@ -71,6 +75,24 @@ const yearsUntilRetirement = (birthyear, firstName) => {
 };
 console.log(yearsUntilRetirement(1996, "Sachin"));
 console.log(yearsUntilRetirement(1991, "Jonas"));
+
+
+///////////////////////////////////////
+// Functions Calling Other Functions
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangesPieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} piece of apple and ${orangesPieces} piece of orange.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
 */
 
 ///////////////////////////////////////
