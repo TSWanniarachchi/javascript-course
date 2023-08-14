@@ -96,3 +96,26 @@ console.log(fruitProcessor(2, 3));
 */
 
 ///////////////////////////////////////
+// Reviewing Functions
+
+const calcAge = function (birthyear) {
+  return 2037 - birthyear;
+};
+
+const yearsUntilRetirement = function (birthyear, firstName) {
+  const age = calcAge(birthyear);
+  const retirement = 60 - age;
+
+  // return retirement > 0 ? retirement : -1;
+
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years`);
+    return retirement;
+  } else {
+    console.log(`${firstName} has already retired 🎉`);
+    return -1;
+  }
+};
+
+console.log(yearsUntilRetirement(1996, "Sachin"));
+console.log(yearsUntilRetirement(1950, "Mike"));

@@ -70,6 +70,7 @@ console.log(percSrilanka3, percIndia3, percUnitedKingdom3);
 ////////////////////////////////////
 // Functions Calling Other Functions
 
+/*
 // 1.
 function describePopulation(country, population) {
   return `${country} has ${population} million people, which is about ${percentageOfWorld1(
@@ -86,3 +87,6 @@ function percentageOfWorld1(population) {
 console.log(describePopulation(country, population));
 console.log(describePopulation("India", 1408));
 console.log(describePopulation("United Kingdom", 67));
+*/
+
+////////////////////////////////////
