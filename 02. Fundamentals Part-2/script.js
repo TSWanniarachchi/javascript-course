@@ -1,9 +1,9 @@
 "use strict";
 
-/*
 ////////////////////////////////////
 // Activating Strict Mode
 
+/*
 let hasDriversLicense = false;
 const passTest = true;
 
@@ -12,11 +12,12 @@ if (hasDriversLicense) console.log("I can drive a 🚗");
 
 // const interface = "Audio";
 // const private = 534;
-
+*/
 
 ///////////////////////////////////////
 // Functions
 
+/*
 function logger() {
   console.log("My name is Sachin");
 }
@@ -40,11 +41,12 @@ console.log(appleOrangeJuice);
 
 const num = Number("23");
 console.log(num);
-
+*/
 
 ///////////////////////////////////////
 // Function Declarations vs. Expressions
 
+/*
 // Function declaration
 function calcAge1(birthyear) {
   return 2037 - birthyear;
@@ -58,11 +60,12 @@ const calcAge2 = function (birthyear) {
 };
 const age2 = calcAge2(1996);
 console.log(age2);
-
+*/
 
 ///////////////////////////////////////
 // Arrow functions
 
+/*
 const calAge3 = (birthyear) => 2037 - birthyear;
 const age3 = calAge3(1996);
 console.log(age3);
@@ -75,11 +78,12 @@ const yearsUntilRetirement = (birthyear, firstName) => {
 };
 console.log(yearsUntilRetirement(1996, "Sachin"));
 console.log(yearsUntilRetirement(1991, "Jonas"));
-
+*/
 
 ///////////////////////////////////////
 // Functions Calling Other Functions
 
+/*
 function cutFruitPieces(fruit) {
   return fruit * 4;
 }
@@ -93,11 +97,12 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
-
+*/
 
 ///////////////////////////////////////
 // Reviewing Functions
 
+/*
 const calcAge = function (birthyear) {
   return 2037 - birthyear;
 };
@@ -136,6 +141,7 @@ TEST DATA 1: Dolphins scored 44, 23, and 71. Koalas scored 65, 54, and 49.
 TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
 */
 
+/*
 // 1.
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
@@ -156,3 +162,50 @@ const checkWinner = (avgDolphins, avgKoalas) => {
 
 // 4.
 checkWinner(scoreDolphins, scoreKoalas);
+*/
+
+///////////////////////////////////////
+// Introduction to Arrays
+
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+const years1 = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Joy";
+console.log(friends);
+// friends = ["Root", "Kevin"];
+
+const firstName = "Sachin";
+const sachin = [firstName, "Wanniarachchi", 2037 - 1996, "Student", friends];
+console.log(sachin);
+console.log(sachin.length);
+
+// Exercise
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1]),
+];
+console.log(ages);

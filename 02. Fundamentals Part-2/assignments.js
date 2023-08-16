@@ -90,3 +90,23 @@ console.log(describePopulation("United Kingdom", 67));
 */
 
 ////////////////////////////////////
+// Introduction to Arrays
+
+// 1.
+const populations = [22.16, 1408, 67, 24];
+
+// 2.
+console.log(populations.length === 4);
+
+// 3.
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[populations.length - 1]),
+];
+console.log(percentages);
