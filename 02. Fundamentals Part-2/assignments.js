@@ -92,6 +92,7 @@ console.log(describePopulation("United Kingdom", 67));
 ////////////////////////////////////
 // Introduction to Arrays
 
+/*
 // 1.
 const populations = [22.16, 1408, 67, 24];
 
@@ -110,3 +111,28 @@ const percentages = [
   percentageOfWorld1(populations[populations.length - 1]),
 ];
 console.log(percentages);
+*/
+
+///////////////////////////////////////
+// Basic Array Operations (Methods)
+
+// 1.
+const neighbours = ["India", "Pakisthan", "Bangladesh", "China"];
+
+// 2.
+neighbours.push("Utopia");
+console.log(neighbours);
+
+// 3.
+neighbours.pop();
+console.log(neighbours);
+
+// 4.
+if (!neighbours.includes("Germany")) {
+  console.log("Probably not a central European country :D");
+}
+
+// 5.
+const index = neighbours.indexOf("India");
+neighbours[index] = "Republic of India";
+console.log(neighbours);
