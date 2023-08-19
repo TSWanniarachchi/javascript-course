@@ -6,6 +6,14 @@ const population = 22.16;
 const isIsland = true;
 const language = "Sinhala";
 
+const myCountry = {
+  country: "Sri-Lanka",
+  capital: "Sri-Jayawardhanapura Kotte",
+  language: "Sinhala",
+  population: 22.16,
+  neighbours: ["India", "Pakisthan", "Bangladesh", "China"],
+};
+
 ////////////////////////////////////
 // Functions
 
@@ -142,6 +150,7 @@ console.log(neighbours);
 ///////////////////////////////////////
 // Introduction to Objects
 
+/*
 // 1.
 const myCountry = {
   country: "Sri-Lanka",
@@ -150,3 +159,23 @@ const myCountry = {
   population: 22.16,
   neighbours: ["India", "Pakisthan", "Bangladesh", "China"],
 };
+*/
+
+///////////////////////////////////////
+// Dot vs. Bracket Notation
+
+/*
+// 1.
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+);
+
+// 2.
+myCountry.population += 2;
+console.log(myCountry.population);
+
+myCountry["population"] -= 2;
+console.log(myCountry.population);
+*/
+
+///////////////////////////////////////

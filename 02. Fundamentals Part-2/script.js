@@ -287,6 +287,7 @@ console.log(totals);
 ///////////////////////////////////////
 // Introduction to Objects
 
+/*
 // Array
 const sachinArray = [
   "Sachin",
@@ -298,9 +299,55 @@ const sachinArray = [
 
 // Object
 const sachinObject = {
-  firstname: "Sachin",
+  firstName: "Sachin",
   lastName: "Wanniarachchi",
   age: 2037 - 1996,
   job: "Student",
   friends: ["Michael", "Peter", "Steven"],
 };
+*/
+
+///////////////////////////////////////
+// Dot vs. Bracket Notation
+
+const sachin = {
+  firstName: "Sachin",
+  lastName: "Wanniarachchi",
+  age: 2037 - 1996,
+  job: "Student",
+  friends: ["Michael", "Peter", "Steven"],
+};
+console.log(sachin);
+
+console.log(sachin.firstName);
+console.log(sachin["firstName"]); // [] we could put any expression or compute the property names
+
+const nameKey = "Name";
+console.log(sachin["first" + nameKey]);
+console.log(sachin["last" + nameKey]);
+
+// console.log(jonas.'last' + nameKey)
+
+const interestedIn = prompt(
+  "What do you want to know about Sachin? Choose between firstName, lastName, age, job, and friends"
+);
+console.log(sachin.interestedIn); // undefined
+console.log(sachin[interestedIn]); // Student
+
+if (sachin[interestedIn]) {
+  console.log(sachin[interestedIn]);
+} else {
+  console.log(
+    "Wrong request! Choose between firstName, lastName, age, job, and friends"
+  );
+}
+
+sachin.location = "Nugegoda";
+sachin["twitter"] = "@TSWanniarchchi";
+console.log(sachin);
+
+// Challenge
+// "Sachin has 3 friends, and his best friend is called Michael"
+console.log(
+  `${sachin.firstName} has ${sachin.friends.length} friends, and his best friend is called ${sachin.friends[0]}`
+);
