@@ -128,6 +128,7 @@ console.log(yearsUntilRetirement(1950, "Mike"));
 
 ///////////////////////////////////////
 // CHALLENGE #1
+
 /*
 Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently.Each team competes 3 times, and then the average of the 3 scores is calculated (so one average score per team). A team only wins if it has at least double the average score of the other team. Otherwise, no team wins!
 
@@ -252,6 +253,7 @@ if (friends.includes("Steven")) {
 
 ///////////////////////////////////////
 // CHALLENGE #2
+
 /*
 Steven wants you to improve his tip calculator, using the same rules as before â€” tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
 
@@ -263,6 +265,7 @@ Steven wants you to improve his tip calculator, using the same rules as before â
 TEST DATA: 125, 555, and 44.
 */
 
+/*
 // 1.
 const calcTip = (bill) =>
   bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -279,3 +282,25 @@ console.log(tips);
 // 4.
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(totals);
+*/
+
+///////////////////////////////////////
+// Introduction to Objects
+
+// Array
+const sachinArray = [
+  "Sachin",
+  "Wanniarachchi",
+  2037 - 1996,
+  "Student",
+  ["Michael", "Peter", "Steven"],
+];
+
+// Object
+const sachinObject = {
+  firstname: "Sachin",
+  lastName: "Wanniarachchi",
+  age: 2037 - 1996,
+  job: "Student",
+  friends: ["Michael", "Peter", "Steven"],
+};

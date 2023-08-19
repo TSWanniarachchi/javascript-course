@@ -116,6 +116,7 @@ console.log(percentages);
 ///////////////////////////////////////
 // Basic Array Operations (Methods)
 
+/*
 // 1.
 const neighbours = ["India", "Pakisthan", "Bangladesh", "China"];
 
@@ -136,3 +137,16 @@ if (!neighbours.includes("Germany")) {
 const index = neighbours.indexOf("India");
 neighbours[index] = "Republic of India";
 console.log(neighbours);
+*/
+
+///////////////////////////////////////
+// Introduction to Objects
+
+// 1.
+const myCountry = {
+  country: "Sri-Lanka",
+  capital: "Sri-Jayawardhanapura Kotte",
+  language: "Sinhala",
+  population: 22.16,
+  neighbours: ["India", "Pakisthan", "Bangladesh", "China"],
+};
