@@ -310,6 +310,7 @@ const sachinObject = {
 ///////////////////////////////////////
 // Dot vs. Bracket Notation
 
+/*
 const sachin = {
   firstName: "Sachin",
   lastName: "Wanniarachchi",
@@ -351,3 +352,52 @@ console.log(sachin);
 console.log(
   `${sachin.firstName} has ${sachin.friends.length} friends, and his best friend is called ${sachin.friends[0]}`
 );
+*/
+
+///////////////////////////////////////
+// Object Methods
+
+const sachin = {
+  firstName: "Sachin",
+  lastName: "Wanniarachchi",
+  birthYear: 1996,
+  job: "Student",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: false,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   // console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age; // good practice
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${
+      this.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+  },
+};
+
+// console.log(sachin.calcAge(1996));
+// console.log(sachin["calcAge"](1996));
+
+// console.log(sachin.calcAge());
+// console.log(sachin["calcAge"]());
+
+console.log(sachin.calcAge());
+
+console.log(sachin.age);
+console.log(sachin.age);
+console.log(sachin.age);
+
+// Challenge
+// "Sachin is a 41-year old student, and he has a/no driver's license."
+console.log(sachin.getSummary());

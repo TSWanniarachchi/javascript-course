@@ -6,13 +6,13 @@ const population = 22.16;
 const isIsland = true;
 const language = "Sinhala";
 
-const myCountry = {
-  country: "Sri-Lanka",
-  capital: "Sri-Jayawardhanapura Kotte",
-  language: "Sinhala",
-  population: 22.16,
-  neighbours: ["India", "Pakisthan", "Bangladesh", "China"],
-};
+// const myCountry = {
+//   country: "Sri-Lanka",
+//   capital: "Sri-Jayawardhanapura Kotte",
+//   language: "Sinhala",
+//   population: 22.16,
+//   neighbours: ["India", "Pakisthan", "Bangladesh", "China"],
+// };
 
 ////////////////////////////////////
 // Functions
@@ -179,3 +179,33 @@ console.log(myCountry.population);
 */
 
 ///////////////////////////////////////
+// Object Methods
+
+// 1.
+const myCountry = {
+  country: "Sri-Lanka",
+  capital: "Sri-Jayawardhanapura Kotte",
+  language: "Sinhala",
+  population: 22.16,
+  neighbours: ["India", "Pakisthan", "Bangladesh", "China"],
+
+  describe: function () {
+    console.log(
+      `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+    );
+  },
+
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length === 0 ? true : false;
+
+    // Even simpler version (see why this works...) => Truthy and Falsy Values
+    // this.isIsland = !Boolean(this.neighbours.length);
+  },
+};
+
+// 2.
+myCountry.describe();
+
+// 3.
+myCountry.checkIsland();
+console.log(myCountry);
