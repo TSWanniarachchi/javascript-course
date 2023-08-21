@@ -181,6 +181,7 @@ console.log(myCountry.population);
 ///////////////////////////////////////
 // Object Methods
 
+/*
 // 1.
 const myCountry = {
   country: "Sri-Lanka",
@@ -209,3 +210,12 @@ myCountry.describe();
 // 3.
 myCountry.checkIsland();
 console.log(myCountry);
+*/
+
+///////////////////////////////////////
+// Iteration: The for Loop
+
+// 1.
+for (let voter = 1; voter <= 50; voter++) {
+  console.log(`Voter number ${voter} is currently voting!`);
+}

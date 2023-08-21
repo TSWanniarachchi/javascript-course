@@ -418,6 +418,7 @@ This time, let's use objects to implement the calculations! Remember: BMI = mass
 TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.
 */
 
+/*
 // 1., 2.
 const mark = {
   fullName: "Mark Miller",
@@ -447,12 +448,32 @@ john.calcBMI();
 
 if (mark.bmi > john.bmi) {
   console.log(
-    `Mark Miller's BMI (${mark.bmi}) is higher than John Smith's (${john.bmi})!`
+    `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})!`
   );
 } else if (john.bmi > mark.bmi) {
   console.log(
-    `John Smith's BMI (${john.bmi}) is higher than Mark Miller's (${mark.bmi})!`
+    `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})!`
   );
 } else {
   console.log(`Both have same BMI values!`);
+}
+*/
+
+///////////////////////////////////////
+// Iteration: The for Loop
+
+console.log("Lifting weights repetition 1 🏋️‍♀️");
+console.log("Lifting weights repetition 2 🏋️‍♀️");
+console.log("Lifting weights repetition 3 🏋️‍♀️");
+console.log("Lifting weights repetition 4 🏋️‍♀️");
+console.log("Lifting weights repetition 5 🏋️‍♀️");
+console.log("Lifting weights repetition 6 🏋️‍♀️");
+console.log("Lifting weights repetition 7 🏋️‍♀️");
+console.log("Lifting weights repetition 8 🏋️‍♀️");
+console.log("Lifting weights repetition 9 🏋️‍♀️");
+console.log("Lifting weights repetition 10 🏋️‍♀️");
+
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
