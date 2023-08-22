@@ -1,3 +1,5 @@
+"use strict";
+
 ////////////////////////////////////
 // Values and Variables
 
@@ -178,14 +180,3 @@ switch (language) {
     console.log("Great language too :D");
 }
 */
-
-////////////////////////////////////
-// The Conditional (Ternary) Operator
-
-// 2.
-population = 130;
-
-// 1.
-console.log(
-  `${country}'s population is ${population > 33 ? "above" : "below"} average.`
-);
