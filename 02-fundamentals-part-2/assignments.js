@@ -245,6 +245,7 @@ console.log(percentages2);
 ///////////////////////////////////////
 // Looping Backwards and Loops in Loops
 
+/*
 // 1.
 const listOfNeighbours = [
   ["Canada", "Mexico"],
@@ -258,3 +259,25 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
     console.log(`Neighbour: ${listOfNeighbours[i][x]}`);
   }
 }
+*/
+
+///////////////////////////////////////
+// The while Loop
+
+// 1.
+const populations = [22.16, 1408, 67, 24];
+const percentages3 = [];
+
+const percentageOfWorld1 = function (population) {
+  return (population / 7900) * 100;
+};
+
+let i = 0;
+while (i < populations.length) {
+  percentages3.push(percentageOfWorld1(populations[i]));
+  i++;
+}
+console.log(percentages3);
+
+// 2.
+// foor Loop
