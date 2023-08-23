@@ -483,6 +483,7 @@ for (let rep = 1; rep <= 10; rep++) {
 ///////////////////////////////////////
 // Looping Arrays, Breaking and Continuing
 
+/*
 const sachinArray = [
   "Sachin",
   "Wanniarachchi",
@@ -530,4 +531,32 @@ for (let i = 0; i < sachinArray.length; i++) {
   if (typeof sachinArray[i] === "number") break;
 
   console.log(sachinArray[i], typeof sachinArray[i]);
+}
+*/
+
+///////////////////////////////////////
+// Looping Backwards and Loops in Loops
+
+const sachinArray = [
+  "Sachin",
+  "Wanniarachchi",
+  2037 - 1996,
+  "Student",
+  ["Michael", "Peter", "Steven"],
+  true,
+];
+
+// 0, 1, ..., 4
+// 4, 3, ..., 0
+
+for (let i = sachinArray.length - 1; i >= 0; i--) {
+  console.log(i, sachinArray[i]);
+}
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+  console.log(`-------- Starting exercise ${exercise}`);
+
+  for (let rep = 1; rep <= 5; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♀️`);
+  }
 }
