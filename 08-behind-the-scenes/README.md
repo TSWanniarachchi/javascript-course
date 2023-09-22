@@ -7,3 +7,5 @@ Welcome to my personal files for the JavaScript course created by Jonas Schmedtm
 - **My Notebook Link:** [OneNote](https://1drv.ms/o/s!Akt357BkRuzmgXEeG6wXxydcK6Kr?e=edau87)
 
 ## Additional Resources
+
+- [Mozilla Developer Network (MDN) JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript): A comprehensive and reliable resource for JavaScript documentation, including tutorials, guides, and reference materials.
