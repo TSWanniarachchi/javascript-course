@@ -9,3 +9,5 @@ Welcome to my personal files for the JavaScript course created by Jonas Schmedtm
 ## Additional Resources
 
 - [Mozilla Developer Network (MDN) JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript): A comprehensive and reliable resource for JavaScript documentation, including tutorials, guides, and reference materials.
+
+## How to Use These Files
