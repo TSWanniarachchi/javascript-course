@@ -46,6 +46,7 @@ calcAge(1996);
 ///////////////////////////////////////
 // Hoisting and TDZ in Practice
 
+/*
 // Variables
 console.log(me);
 // console.log(job);
@@ -92,3 +93,39 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
+*/
+
+///////////////////////////////////////
+// The this Keyword in Practice
+
+console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+calcAge(1996);
+
+const calcAgeArrow = (birthYear) => {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+calcAgeArrow(1980);
+
+const sachin = {
+  year: 1996,
+  calcAge: function () {
+    console.log(this);
+    console.log(2037 - this.year);
+  },
+};
+sachin.calcAge();
+
+const matilda = {
+  year: 2017,
+};
+matilda.calcAge = sachin.calcAge;
+matilda.calcAge();
+
+const f = sachin.calcAge;
+f();
