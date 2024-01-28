@@ -297,6 +297,7 @@ printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
 ///////////////////////////////////////
 // The Spread Operator (...)
 
+/*
 // 1.
 const bookAuthors = [...books[0].author, ...books[1].author];
 console.log(bookAuthors);
@@ -307,3 +308,22 @@ const spellWord = function (word) {
 };
 
 spellWord("JavaScript");
+*/
+
+///////////////////////////////////////
+// Rest Pattern and Parameters
+
+// 1.
+const [mainKeyword, ...rest] = books[0].keywords;
+console.log(mainKeyword, rest);
+
+// 2.
+const { publisher: bookPublisher, ...restOfTheBook } = books[1];
+console.log(bookPublisher, restOfTheBook);
+
+// 3.
+const printBookAuthorsCount = function (title, ...authors) {
+  console.log(`The book "${title}" has ${authors.length} authors`);
+};
+
+printBookAuthorsCount("Algorithms", "Robert Sedgewick", "Kevin Wayne");
