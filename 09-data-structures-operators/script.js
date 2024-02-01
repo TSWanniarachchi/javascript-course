@@ -194,6 +194,7 @@ console.log(restaurant.name);
 ///////////////////////////////////////
 // Rest Pattern and Parameters
 
+/*
 // 1) Destructuring
 // SPREAD, because on RIGHT side of =
 const arr = [1, 2, ...[3, 4]];
@@ -232,3 +233,38 @@ add(...x);
 
 restaurant.orderPizza("mushrooms", "onion", "olives", "spinach");
 restaurant.orderPizza("mushrooms");
+*/
+
+///////////////////////////////////////
+// Short Circuiting (&& and ||)
+
+// Logical operators can operate on any data type, return any data type, and use short-circuiting
+
+// OR (||)
+console.log("---- OR ----");
+console.log(3 || "Sachin");
+console.log("" || "Sachin");
+console.log(true || 0);
+console.log(undefined || null);
+console.log(undefined || 0 || "" || "Hello" || 23 || null);
+
+// Practical example
+restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+// AND (&&)
+console.log("---- AND ----");
+console.log(0 && "Sachin");
+console.log(7 && "Sachin");
+console.log("Hello" && 23 && null && "Sachin");
+
+// Practical example
+if (restaurant.orderPizza) {
+  restaurant.orderPizza("mushrooms", "spinach");
+}
+
+restaurant.orderPizza && restaurant.orderPizza("mushrooms", "spinach");
