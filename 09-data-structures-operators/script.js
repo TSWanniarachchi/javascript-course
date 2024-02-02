@@ -272,7 +272,7 @@ restaurant.orderPizza && restaurant.orderPizza("mushrooms", "spinach");
 */
 
 ///////////////////////////////////////
-// The Nullish Coalescing Operator
+// The Nullish Coalescing Operator (??)
 
 restaurant.numGuests = 0;
 const guests = restaurant.numGuests || 10;

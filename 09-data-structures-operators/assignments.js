@@ -333,6 +333,7 @@ printBookAuthorsCount("Algorithms", "Robert Sedgewick", "Kevin Wayne");
 ///////////////////////////////////////
 // Short Circuiting (&& and ||)
 
+/*
 // 1.
 const hasExamplesInJava = function (book) {
   return book.programmingLanguage === "Java" || "no data available";
@@ -344,4 +345,14 @@ console.log(hasExamplesInJava(books[1]));
 // 2.
 for (let book of books) {
   book.onlineContent && console.log(`"${book.title}" provides online content`);
+}
+*/
+
+///////////////////////////////////////
+// The Nullish Coalescing Operator (??)
+
+// 1.
+for (let book of books) {
+  book.onlineContent ??
+    console.log(`"${book.title}" provides no data about its online content`);
 }
