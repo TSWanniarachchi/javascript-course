@@ -351,8 +351,27 @@ for (let book of books) {
 ///////////////////////////////////////
 // The Nullish Coalescing Operator (??)
 
+/*
 // 1.
 for (let book of books) {
   book.onlineContent ??
     console.log(`"${book.title}" provides no data about its online content`);
+}
+*/
+
+///////////////////////////////////////
+// Logical Assignment Operators
+
+// 1.
+for (let book of books) {
+  book.edition ||= 1;
+  // book.edition ??= 1;
+  console.log(`"${book.title}", Edition: ${book.edition}`);
+}
+
+// 2.
+for (let book of books) {
+  book.highlighted ||= true;
+  book.highlighted &&= !(book.thirdParty.goodreads.rating < 4.2);
+  console.log(`${book.thirdParty.goodreads.rating}, = ${book.highlighted}`);
 }
