@@ -362,6 +362,7 @@ for (let book of books) {
 ///////////////////////////////////////
 // Logical Assignment Operators
 
+/*
 // 1.
 for (let book of books) {
   book.edition ||= 1;
@@ -374,4 +375,31 @@ for (let book of books) {
   book.highlighted ||= true;
   book.highlighted &&= !(book.thirdParty.goodreads.rating < 4.2);
   console.log(`${book.thirdParty.goodreads.rating}, = ${book.highlighted}`);
+}
+*/
+
+///////////////////////////////////////
+// The for-of Loop
+
+// 1.
+let pageSum = 0;
+
+for (const book of books) {
+  pageSum += book.pages;
+}
+console.log(pageSum);
+
+// 2.
+const allAuthors = [];
+
+for (const book of books) {
+  typeof book.author === "object"
+    ? allAuthors.push(...book.author)
+    : allAuthors.push(book.author);
+}
+console.log(allAuthors);
+
+// 3.
+for (const [index, author] of allAuthors.entries()) {
+  console.log(`${index + 1}. ${author}`);
 }
