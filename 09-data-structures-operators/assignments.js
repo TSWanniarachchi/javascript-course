@@ -409,6 +409,7 @@ for (const [index, author] of allAuthors.entries()) {
 ///////////////////////////////////////
 // Enhanced Object Literals
 
+/*
 // 1.
 const bookData = [
   ["title", "Computer Networking: A Top-Down Approach"],
@@ -432,3 +433,15 @@ const newBook2 = {
   pages,
 };
 console.log(newBook2);
+
+///////////////////////////////////////
+// Optional chaining (?.)
+
+// 1.
+const getFirstKeyword = function (book) {
+  return book.keywords?.[0] ?? "Book keywords does not exist.";
+};
+
+console.log(getFirstKeyword(books[0]));
+console.log(getFirstKeyword(newBook2));
+*/
