@@ -442,6 +442,7 @@ for (const [i, el] of menu.entries()) {
 ///////////////////////////////////////
 // Optional chaining (?.)
 
+/*
 // console.log(restaurant.openingHours.mon.open);
 if (restaurant.openingHours && restaurant.openingHours.mon)
   console.log(restaurant.openingHours.mon.open);
@@ -472,4 +473,31 @@ if (users.length > 0) {
   console.log(users[0].name);
 } else {
   console.log("User array empty");
+}
+*/
+
+///////////////////////////////////////
+// Looping Objects: Object Keys, Values, and Entries
+
+// Property Names | Keys
+const properties = Object.keys(openingHours);
+console.log(properties);
+
+let openStr = `We are open on ${properties.length} days: `;
+for (const day of properties) {
+  openStr += `${day}, `;
+}
+console.log(openStr);
+
+// Property Values
+const values = Object.values(openingHours);
+console.log(values);
+
+// Entries objetc
+const entries = Object.entries(openingHours);
+console.log(entries);
+
+// [key, value]
+for (const [day, { open, close }] of entries) {
+  console.log(`On ${day} we open at ${open} am and close at ${close} pm`);
 }
