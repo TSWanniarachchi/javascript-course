@@ -449,6 +449,7 @@ console.log(getFirstKeyword(newBook2));
 ///////////////////////////////////////
 // Looping Objects: Object Keys, Values, and Entries
 
+/*
 // 1.
 const entries = [];
 
@@ -472,3 +473,41 @@ const entries2 = Object.entries(books[0].thirdParty.goodreads);
 // 4.
 console.log(entries);
 console.log(entries2);
+*/
+
+///////////////////////////////////////
+// Sets
+
+// 1.
+const allKeywords = [];
+
+for (const book of books) {
+  allKeywords.push(...book.keywords);
+}
+console.log(allKeywords);
+
+// 2.
+const uniqueKeywords = new Set(allKeywords);
+
+console.log(uniqueKeywords);
+
+// 3.
+uniqueKeywords.add("coding");
+uniqueKeywords.add("science");
+
+console.log(uniqueKeywords);
+
+// 4.
+uniqueKeywords.delete("business");
+
+console.log(uniqueKeywords);
+
+// 5.
+const uniqueKeywordsArr = [...uniqueKeywords];
+
+console.log(uniqueKeywordsArr);
+
+// 6.
+uniqueKeywords.clear();
+
+console.log(uniqueKeywords);
