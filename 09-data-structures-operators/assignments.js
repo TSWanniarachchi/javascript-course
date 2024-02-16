@@ -478,6 +478,7 @@ console.log(entries2);
 ///////////////////////////////////////
 // Sets
 
+/*
 // 1.
 const allKeywords = [];
 
@@ -488,26 +489,45 @@ console.log(allKeywords);
 
 // 2.
 const uniqueKeywords = new Set(allKeywords);
-
 console.log(uniqueKeywords);
 
 // 3.
 uniqueKeywords.add("coding");
 uniqueKeywords.add("science");
-
 console.log(uniqueKeywords);
 
 // 4.
 uniqueKeywords.delete("business");
-
 console.log(uniqueKeywords);
 
 // 5.
 const uniqueKeywordsArr = [...uniqueKeywords];
-
 console.log(uniqueKeywordsArr);
 
 // 6.
 uniqueKeywords.clear();
-
 console.log(uniqueKeywords);
+*/
+
+///////////////////////////////////////
+// Maps: Fundamentals
+
+// 1.
+const bookMap = new Map([
+  ["title", "Clean Code"],
+  ["author", "Robert C. Martin"],
+]);
+console.log(bookMap);
+
+// 2.
+bookMap.set("pages", 464);
+console.log(bookMap);
+
+// 3.
+console.log(`${bookMap.get("title")} by ${bookMap.get("author")}`);
+
+// 4.
+console.log(bookMap.size);
+
+// 5.
+if (bookMap.has("author")) console.log("The author of the book is known");
