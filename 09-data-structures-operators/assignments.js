@@ -512,6 +512,7 @@ console.log(uniqueKeywords);
 ///////////////////////////////////////
 // Maps: Fundamentals
 
+/*
 // 1.
 const bookMap = new Map([
   ["title", "Clean Code"],
@@ -531,3 +532,16 @@ console.log(bookMap.size);
 
 // 5.
 if (bookMap.has("author")) console.log("The author of the book is known");
+*/
+
+///////////////////////////////////////
+// Maps: Iteration
+
+// 1.
+const firstBookMap = Object.entries(books[0]);
+console.log(firstBookMap);
+
+// 2.
+for (const [key, value] of firstBookMap) {
+  if (typeof value === "number") console.log(key);
+}
