@@ -729,6 +729,7 @@ Let's continue with our football betting app! This time, we have a map with a lo
 GOOD LUCK 😀
 */
 
+/*
 const gameEvents = new Map([
   [17, "⚽️ GOAL"],
   [36, "🔁 Substitution"],
@@ -762,7 +763,6 @@ console.log(
 
 // 4.
 for (const [time, event] of gameEvents) {
-  console.log(
-    `[${time <= 45 ? "FIRST HALF" : "SECOND HALF"}] ${time}: ${event}`
-  );
+  console.log(`[${time <= 45 ? "FIRST" : "SECOND"} HALF] ${time}: ${event}`);
 }
+*/
