@@ -537,6 +537,7 @@ if (bookMap.has("author")) console.log("The author of the book is known");
 ///////////////////////////////////////
 // Maps: Iteration
 
+/*
 // 1.
 const firstBookMap = Object.entries(books[0]);
 console.log(firstBookMap);
@@ -545,3 +546,32 @@ console.log(firstBookMap);
 for (const [key, value] of firstBookMap) {
   if (typeof value === "number") console.log(key);
 }
+*/
+
+///////////////////////////////////////
+// Working With Strings - Part 1
+
+// 1.
+const ISBN = books[0].ISBN;
+console.log(ISBN[6]);
+console.log(ISBN[4]);
+console.log(ISBN[9]);
+console.log(ISBN[8]);
+
+// 2.
+const quote =
+  "A computer once beat me at chess, but it was no match for me at kick boxing";
+console.log(quote.indexOf("chess"));
+
+// 3.
+console.log(quote.slice(-6));
+console.log(quote.slice(quote.lastIndexOf(" ") + 1));
+
+// 4.
+const isContributor = function (author) {
+  return author.includes("(Contributor)");
+  // return author.lastIndexOf('(Contributor)') !== -1;
+};
+
+console.log(isContributor("Julie Sussman (Contributor)"));
+console.log(isContributor("Robert Sedgewick"));
