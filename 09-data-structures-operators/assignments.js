@@ -551,6 +551,7 @@ for (const [key, value] of firstBookMap) {
 ///////////////////////////////////////
 // Working With Strings - Part 1
 
+/*
 // 1.
 const ISBN = books[0].ISBN;
 console.log(ISBN[6]);
@@ -575,3 +576,57 @@ const isContributor = function (author) {
 
 console.log(isContributor("Julie Sussman (Contributor)"));
 console.log(isContributor("Robert Sedgewick"));
+*/
+
+///////////////////////////////////////
+// Working With Strings - Part 2
+
+// 1.
+const normalizeAuthorName = function (author) {
+  const words = author
+    .replace("(Contributor)", "")
+    .trim()
+    .toLowerCase()
+    .split(" ");
+  const capitalizedWords = [];
+
+  for (const word of words) {
+    const capitalizedWord = word.replace(word[0], word[0].toUpperCase());
+    capitalizedWords.push(capitalizedWord);
+  }
+
+  const normalizedAuthorName = capitalizedWords.join(" ");
+  return normalizedAuthorName;
+};
+
+console.log(normalizeAuthorName("  JuliE sussMan (Contributor)"));
+console.log(normalizeAuthorName("Robert Sedgewick   "));
+
+// 2.
+const newBookTitle = books[1].title.replace("Programs", "Software");
+console.log(newBookTitle);
+
+// 3.
+const logBookTheme = function (title) {
+  const cleanedTitle = title.trim().toLowerCase();
+  const startWithComputer = cleanedTitle.startsWith("computer");
+  const includesAlgorithms = cleanedTitle.includes("algorithms");
+  const includesStructures = cleanedTitle.includes("structures");
+  const endWithSystems =
+    cleanedTitle.endsWith("system") || cleanedTitle.endsWith("systems");
+  const includesOperating = cleanedTitle.includes("operating");
+
+  if (startWithComputer) {
+    console.log("This book is about computers");
+  } else if (includesAlgorithms && includesStructures) {
+    console.log("This book is about algorithms and data structures");
+  } else if (endWithSystems && !includesOperating) {
+    console.log(
+      "This book is about some systems, but definitely not about operating systems"
+    );
+  }
+};
+
+for (const book of books) {
+  logBookTheme(book.title);
+}
