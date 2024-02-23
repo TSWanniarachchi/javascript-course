@@ -581,6 +581,7 @@ console.log(isContributor("Robert Sedgewick"));
 ///////////////////////////////////////
 // Working With Strings - Part 2
 
+/*
 // 1.
 const normalizeAuthorName = function (author) {
   const words = author
@@ -630,3 +631,52 @@ const logBookTheme = function (title) {
 for (const book of books) {
   logBookTheme(book.title);
 }
+*/
+
+///////////////////////////////////////
+// Working With Strings - Part 3
+
+// 1.
+const logBookCategories = function (categoriesString) {
+  const categories = categoriesString.split(";");
+
+  for (const category of categories) {
+    console.log(category);
+  }
+};
+
+const bookCategories =
+  "science;computing;computer science;algorithms;business;operating systems;networking;electronics";
+logBookCategories(bookCategories);
+
+// 2.
+const getKeywordsAsString = function (books) {
+  const keywords = [];
+
+  for (const book of books) {
+    keywords.push(...book.keywords);
+  }
+
+  const uniqueKeywords = [...new Set(keywords)];
+  const keywordsString = uniqueKeywords.join(";");
+
+  return keywordsString;
+};
+
+console.log(getKeywordsAsString(books));
+
+// 3.
+const logBookChapters = function (chapters) {
+  for (const [chapter, pages] of chapters) {
+    console.log(`${chapter.padEnd(20, "_")} ${pages}`);
+  }
+};
+
+const bookChapters = [
+  ["The Basics", 14],
+  ["Sorting", 254],
+  ["Searching", 372],
+  ["Graphs", 526],
+  ["Strings", 706],
+];
+logBookChapters(bookChapters);
